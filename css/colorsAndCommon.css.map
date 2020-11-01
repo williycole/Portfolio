@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAcA,AAAA,CAAC,CAAC;EACE,OAAO,EAAC,CAAC;EACT,MAAM,EAAE,CAAC;CACZ;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAnBU,OAAO;EAoBtB,UAAU,EArBW,OAAO;CAsB/B",
+    "sources": [
+        "colorsAndCommon.scss"
+    ],
+    "names": [],
+    "file": "colorsAndCommon.css"
+}
