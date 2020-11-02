@@ -1,0 +1,25 @@
+$primaryBackgroundColor: #d3d6db;
+$primaryFontColor1: #171C28;
+$secondaryFontColor1: #fca311;
+
+* {
+    padding:0;
+    margin: 0;
+}
+
+body {
+    color: $primaryFontColor1;
+    background: $primaryBackgroundColor;
+}
+
+main {
+    padding: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+   color:$secondaryFontColor1;
+}

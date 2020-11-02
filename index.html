@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>William Cole Boren's Portfolio</title>
 <!-- <script src="https://kit.fontawesome.com/f0e8d23775.js" crossorigin="anonymous"></script> -->
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./styles/style.css">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,18 @@
 
 <body>
     <header>
+        <div class="hamburger-container">
+            <button class="hamburger" onclick="toggleNav()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+
         <figure class="home-logo">
             <img src="" class="home-logo-img" alt="Home Logo">
         </figure>
-        <nav>
+        <nav class="nav-menu">
             <ul id="nav-ul">
                 <li class="nav-li"><a href="#">Projects</a></li>
                 <li class="nav-li"><a href="#">About</a></li>
@@ -190,7 +198,7 @@
 
 
 
-    <!-- <script src="#"></script> -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,57 @@
+header {
+    // background: #d3d6db;
+    position: fixed;;
+    background: blue;
+    height: 3rem;
+    width: 100%;
+    z-index: 5;
+}
+
+.hamburger-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.hamburger {
+    display: block;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    z-index: 10;
+    background: none;
+    border: none;
+}
+
+ .line {
+    width: 15px;
+    height: 3px;
+    background: black;
+    margin: 3px;
+}
+
+.nav-menu {
+    display: none;
+    align-items: center;
+    width: 100%;
+}
+
+#nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 80px;
+    height: 0;
+    width: 100%;
+}
+
+//// Desktop View
+@media (min-width:768px){
+    .hamburger {
+      display: none;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+}
