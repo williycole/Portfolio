@@ -5,10 +5,36 @@
 ////All styles for landing section
 @import './landing-section';
 
+.projects-heading {
+    font-size: 1rem;
 
+}
 
+.project-figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+     padding-top: 1rem;
+}
 
+.see-more-a {
+    font-size: 1rem;
+    padding-top: .8rem;
+    font-style: italic;
+}
 
-#project-section {
+.project-img {
+    width: 24rem;
+}
 
+.see-project {
+    // display:none;
+}
+
+////Desktop View
+@media(min-width:768px){
+    .see-project {
+        display:none;
+    }
 }

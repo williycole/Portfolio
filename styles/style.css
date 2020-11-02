@@ -24,6 +24,10 @@ a {
 
 a:hover {
   color: #fca311;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 section {
@@ -318,5 +322,42 @@ header {
   border: 2px solid #fca311;
   padding: .4rem .6rem;
   border-radius: 5px;
+}
+
+.projects-heading {
+  font-size: 1rem;
+}
+
+.project-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 1rem;
+}
+
+.see-more-a {
+  font-size: 1rem;
+  padding-top: .8rem;
+  font-style: italic;
+}
+
+.project-img {
+  width: 24rem;
+}
+
+@media (min-width: 768px) {
+  .see-project {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
