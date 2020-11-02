@@ -43,6 +43,11 @@ section {
           align-items: center;
 }
 
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
+}
+
 header {
   position: fixed;
   background: #d3d6db;
@@ -266,7 +271,7 @@ header {
 }
 
 .c-border {
-  padding: .4rem;
+  padding: .4rem .6rem;
   letter-spacing: normal;
   border: 2px solid #fca311;
   border-radius: 5px;
@@ -275,7 +280,7 @@ header {
 .b-border {
   letter-spacing: normal;
   border: 2px solid #fca311;
-  padding: .4rem;
+  padding: .4rem .6rem;
   border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */
