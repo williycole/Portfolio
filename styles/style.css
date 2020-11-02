@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: "Cousine", monospace;
   color: #171C28;
   background: #d3d6db;
 }
@@ -224,6 +224,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Archivo Black", sans-serif;
 }
 
 .last-name-container {
@@ -240,7 +241,7 @@ header {
 .name-middle {
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding-right: 5.5rem;
+  padding-right: 5.9rem;
 }
 
 .name-last {
@@ -251,13 +252,14 @@ header {
 .name-middle-e {
   font-size: 1.5rem;
   text-transform: uppercase;
-  padding-left: 10.3rem;
+  padding-left: 9.9rem;
 }
 
 .dev-title {
   font-size: 1.2rem;
   padding: .5rem;
   letter-spacing: normal;
+  font-family: "Cousine", monospace;
   border: 2px solid #fca311;
   border-radius: 5px;
   text-transform: uppercase;

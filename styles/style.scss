@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: $headingFont;
 }
 
 .last-name-container {
@@ -27,7 +28,7 @@
 .name-middle {
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding-right: 5.5rem;
+    padding-right: 5.9rem;
 }
 
 .name-last {
@@ -38,7 +39,7 @@
 .name-middle-e {
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding-left: 10.3rem;
+    padding-left: 9.9rem;
 }
 
 
@@ -46,6 +47,7 @@
     font-size: 1.2rem;
     padding: .5rem;
     letter-spacing: normal;
+    font-family: $primaryFont;
     border: 2px solid $secondaryFontColor;
     border-radius: 5px;
     text-transform: uppercase;

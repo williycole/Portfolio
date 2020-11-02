@@ -1,7 +1,8 @@
 $primaryBackgroundColor: #d3d6db;
 $primaryFontColor: #171C28;
 $secondaryFontColor: #fca311;
-
+$headingFont:'Archivo Black', sans-serif;
+$primaryFont: 'Cousine', monospace;
 
 * {
     padding:0;
@@ -9,7 +10,7 @@ $secondaryFontColor: #fca311;
 }
 
 body {
-    font-family: monospace;
+   font-family: $primaryFont;
     color: $primaryFontColor;
     background: $primaryBackgroundColor;
 }
