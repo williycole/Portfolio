@@ -3,4 +3,66 @@
 ////Nav for mobile and desktop views
 @import './nav';
 
+.landing-heading-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    // width: 100%;
+}
+
+.name-container {
+    letter-spacing: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-name-container {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1.2rem;
+}
+
+.name-middle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-right: 5.5rem;
+}
+
+.name-last {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.name-middle-e {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 10.3rem;
+}
+
+
+.dev-title {
+    font-size: 1.2rem;
+    padding: .5rem;
+    letter-spacing: normal;
+    border: 2px solid $secondaryFontColor;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+
+.c-border {
+    padding: .4rem;
+    letter-spacing: normal;
+    border: 2px solid $secondaryFontColor;
+    border-radius: 5px;
+}
+.b-border {
+    letter-spacing: normal;
+    border: 2px solid $secondaryFontColor;
+    padding: .4rem;
+    border-radius: 5px;
+}
+
 
