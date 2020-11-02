@@ -295,7 +295,7 @@ header {
 
 .dev-title-background {
   padding: .2rem;
-  border: dashed 2px #495867;
+  border: solid 2px #495867;
   border-radius: 5px;
   background: #fca311;
 }
@@ -353,6 +353,31 @@ header {
 
 .project-img {
   width: 23rem;
+}
+
+.view-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem;
+}
+
+.see-project-button {
+  border-radius: 5px;
+  background: #d3d6db;
+  font-size: 1.2rem;
+  padding: .2rem;
+  margin: 1rem;
 }
 
 @media (min-width: 768px) {

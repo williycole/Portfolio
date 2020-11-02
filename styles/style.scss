@@ -1,40 +1,85 @@
+
 ////common css, resets, and colors
-@import './commonAndColors';
-////Nav for mobile and desktop views
+$primaryBackgroundColor: #d3d6db;
+$primaryFontColor: #171C28;
+$secondaryFontColor: #fca311;
+$secondaryFontColor2: #495867;
+$headingFont:'Archivo Black', sans-serif;
+$primaryFont: 'Cousine', monospace;
+
+////Imports for page sections
 @import './nav';
-////All styles for landing section
 @import './landing-section';
+@import './projects-section';
 
-.projects-heading {
-    font-size: 1rem;
-
+* {
+    padding:0;
+    margin: 0;
 }
 
-.project-figure {
+body {
+   font-family: $primaryFont;
+    color: $primaryFontColor;
+    background: $primaryBackgroundColor;
+}
+
+main {
+    padding: 3rem 1.2rem 1.2rem 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $primaryFontColor;
+    text-decoration: none;
+}
+
+a:hover {
+    color:$secondaryFontColor;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out
+}
+
+section {
+    padding-top:1rem ;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: end;
-     padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
 }
-
-.see-more-a {
-    font-size: 1rem;
-    padding-top: .8rem;
-    font-style: italic;
+.section-heading:before,
+.section-heading:after {
+        display: inline-block;
+        content: "";
+        border-top:  $secondaryFontColor2 solid 4px;
+        width: 3.8rem;
+        margin: 6px 1rem ;
 }
-
-.project-img {
-    width: 23rem;
-}
-
-.see-project {
-    // display:none;
-}
-
 ////Desktop View
 @media(min-width:768px){
-    .see-project {
-        display:none;
+    .section-heading:before,
+    .section-heading:after {
+        display: inline-block;
+        content: "";
+        border-top:  $secondaryFontColor2 solid 4px;
+        width: 5.7rem;
+        margin: 6px 1rem ;
     }
 }
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    font-family: $headingFont;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+.projects-heading {
+    font-size: 1rem;
+
+}
+
+.project-figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+     padding-top: 1rem;
+}
+
+.see-more-a {
+    font-size: 1rem;
+    padding-top: .8rem;
+    font-style: italic;
+}
+
+.project-img {
+    width: 23rem;
+}
+
+.view-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.see-project-button {
+    border-radius: 5px;
+    background: $primaryBackgroundColor;
+    font-size: 1.2rem;
+    padding: .2rem;
+    margin: 1rem;
+}
+
+////Desktop View
+@media(min-width:768px){
+    .see-project {
+        display:none;
+    }
+}
