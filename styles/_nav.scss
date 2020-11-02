@@ -22,7 +22,7 @@ header {
     border: none;
 }
 
- .line {
+.line {
     width: 15px;
     height: 3px;
     background: $primaryFontColor;
@@ -50,6 +50,7 @@ header {
 }
 
 .nav-li-a {
+    border-bottom: $secondaryFontColor2 dashed 2px;
     font-weight: 800;
     font-size: 1.2rem;
 }
@@ -84,6 +85,10 @@ header {
         width: 100%;
     }
 
+    .nav-li-a {
+        border: none;
+    }
+
     #nav-ul {
         display: flex;
         flex-direction: row;
@@ -112,7 +117,7 @@ header {
         height: 1px;
         bottom: 0;
         left: 0px;
-        background: $primaryFontColor;
+        background: $secondaryFontColor2;
         transform-origin: bottom left;
         transition: transform 0.25s ease-out;
         padding-bottom: 2px;

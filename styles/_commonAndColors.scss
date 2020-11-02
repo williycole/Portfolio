@@ -1,6 +1,7 @@
 $primaryBackgroundColor: #d3d6db;
 $primaryFontColor: #171C28;
 $secondaryFontColor: #fca311;
+$secondaryFontColor2: #495867;
 $headingFont:'Archivo Black', sans-serif;
 $primaryFont: 'Cousine', monospace;
 
@@ -39,6 +40,26 @@ section {
     justify-content: center;
     align-items: center;
 }
+.section-heading:before,
+.section-heading:after {
+        display: inline-block;
+        content: "";
+        border-top:  $secondaryFontColor2 solid 4px;
+        width: 3.8rem;
+        margin: 6px 1rem ;
+}
+////Desktop View
+@media(min-width:768px){
+    .section-heading:before,
+    .section-heading:after {
+        display: inline-block;
+        content: "";
+        border-top:  $secondaryFontColor2 solid 4px;
+        width: 5.7rem;
+        margin: 6px 1rem ;
+}
+}
+
 h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-family: $headingFont;

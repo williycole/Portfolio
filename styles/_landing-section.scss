@@ -1,8 +1,9 @@
 .landing-heading-container {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     padding: 1rem;
-    // width: 100%;
+    width: 100%;
 }
 
 .name-container {
@@ -12,6 +13,7 @@
     justify-content: center;
     align-items: center;
     font-family: $headingFont;
+    width: 100%;
 }
 
 .last-name-container {
@@ -34,10 +36,15 @@
 .name-middle-e {
     font-size: 1.5rem;
     text-transform: uppercase;
-    padding-left: 9.9rem;
+    padding-right: 5.9rem;
 }
 
-
+.dev-title-background {
+    padding: .2rem;
+    border: dashed 2px $secondaryFontColor2;
+    border-radius: 5px;
+    background: $secondaryFontColor;
+}
 .dev-title {
     font-size: 1.2rem;
     padding: .5rem;
