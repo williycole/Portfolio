@@ -50,6 +50,7 @@ header {
 }
 
 .nav-li-a {
+    color: $primaryFontColor;
     border-bottom: $secondaryFontColor2 dashed 2px;
     font-weight: 800;
     font-size: 1.2rem;
@@ -87,6 +88,7 @@ header {
 
     .nav-li-a {
         border: none;
+        color: $primaryFontColor;
     }
 
     #nav-ul {

@@ -1,77 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: "Cousine", monospace;
-  color: #171C28;
-  background: #d3d6db;
-}
-
-main {
-  padding: 3rem 1.2rem 1.2rem 1.2rem;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  color: #171C28;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #fca311;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-section {
-  padding-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-heading:before,
-.section-heading:after {
-  display: inline-block;
-  content: "";
-  border-top: #495867 solid 4px;
-  width: 3.8rem;
-  margin: 6px 1rem;
-}
-
-@media (min-width: 768px) {
-  .section-heading:before,
-  .section-heading:after {
-    display: inline-block;
-    content: "";
-    border-top: #495867 solid 4px;
-    width: 5.7rem;
-    margin: 6px 1rem;
-  }
-}
-
-h1, h2, h3, h4, h5 {
-  text-transform: uppercase;
-  font-family: "Archivo Black", sans-serif;
-}
-
 header {
   position: fixed;
   background: #d3d6db;
@@ -135,6 +61,7 @@ header {
 }
 
 .nav-li-a {
+  color: #171C28;
   border-bottom: #495867 dashed 2px;
   font-weight: 800;
   font-size: 1.2rem;
@@ -177,6 +104,7 @@ header {
   }
   .nav-li-a {
     border: none;
+    color: #171C28;
   }
   #nav-ul {
     display: -webkit-box;
@@ -297,7 +225,8 @@ header {
   padding: .2rem;
   border: solid 2px #495867;
   border-radius: 5px;
-  background: #fca311;
+  background: #495867;
+  color: #fca311;
 }
 
 .dev-title {
@@ -380,9 +309,91 @@ header {
   margin: 1rem;
 }
 
+.see-project-button:hover {
+  background-color: #495867;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .see-project {
     display: none;
   }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Cousine", monospace;
+  color: #171C28;
+  background: #d3d6db;
+}
+
+main {
+  padding: 3rem 1.2rem 1.2rem 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #171C28;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fca311;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+section {
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-heading:before,
+.section-heading:after {
+  display: inline-block;
+  content: "";
+  border-top: #495867 solid 4px;
+  width: 3.8rem;
+  margin: 6px 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-heading:before,
+  .section-heading:after {
+    display: inline-block;
+    content: "";
+    border-top: #495867 solid 4px;
+    width: 5.7rem;
+    margin: 6px 1rem;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-family: "Archivo Black", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

@@ -37,6 +37,12 @@
     margin: 1rem;
 }
 
+.see-project-button:hover {
+    background-color:$secondaryFontColor2;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out
+}
+
 ////Desktop View
 @media(min-width:768px){
     .see-project {
