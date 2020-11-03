@@ -1,6 +1,8 @@
 .projects-heading {
     font-size: 1rem;
-
+    margin: 1rem;
+    padding: .2rem;
+    background:  $secondaryFontColor;
 }
 
 .project-figure {
@@ -31,21 +33,29 @@
 
 .see-project-button {
     border-radius: 5px;
-    background: $primaryBackgroundColor;
+    background-color:$secondaryFontColor2;
     font-size: 1.2rem;
     padding: .2rem;
     margin: 1rem;
 }
 
-.see-project-button:hover {
-    background-color:$secondaryFontColor2;
-    transform: scale(1.2);
-    transition: all .3s ease-in-out
+.see-project-a {
+    color: $secondaryFontColor;
+}
+
+.project-caption {
+    padding: 2rem 1rem 0 1rem;
 }
 
 ////Desktop View
 @media(min-width:768px){
-    .see-project {
+    .see-project-button {
         display:none;
     }
+
+    // .see-project-button:hover {
+
+        //     transform: scale(1.2);
+        //     transition: all .3s ease-in-out
+        // }
 }

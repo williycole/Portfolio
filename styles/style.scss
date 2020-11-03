@@ -17,6 +17,11 @@ $primaryFont: 'Cousine', monospace;
     margin: 0;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
 body {
     font-family: $primaryFont;
     color: $primaryFontColor;
@@ -29,6 +34,10 @@ main {
 
 ul {
     list-style: none;
+}
+
+button {
+    box-shadow: 0px 2px 8px  #1b1b1b;
 }
 
 a {

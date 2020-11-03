@@ -26,6 +26,8 @@ header {
   z-index: 10;
   background: none;
   border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .line {
@@ -253,8 +255,15 @@ header {
   border-radius: 5px;
 }
 
+.landing-p {
+  padding: 2rem 1rem;
+}
+
 .projects-heading {
   font-size: 1rem;
+  margin: 1rem;
+  padding: .2rem;
+  background: #fca311;
 }
 
 .project-figure {
@@ -303,22 +312,22 @@ header {
 
 .see-project-button {
   border-radius: 5px;
-  background: #d3d6db;
+  background-color: #495867;
   font-size: 1.2rem;
   padding: .2rem;
   margin: 1rem;
 }
 
-.see-project-button:hover {
-  background-color: #495867;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+.see-project-a {
+  color: #fca311;
+}
+
+.project-caption {
+  padding: 2rem 1rem 0 1rem;
 }
 
 @media (min-width: 768px) {
-  .see-project {
+  .see-project-button {
     display: none;
   }
 }
@@ -326,6 +335,11 @@ header {
 * {
   padding: 0;
   margin: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -340,6 +354,11 @@ main {
 
 ul {
   list-style: none;
+}
+
+button {
+  -webkit-box-shadow: 0px 2px 8px  #1b1b1b;
+          box-shadow: 0px 2px 8px  #1b1b1b;
 }
 
 a {

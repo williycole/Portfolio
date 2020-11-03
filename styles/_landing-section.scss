@@ -56,13 +56,13 @@
     text-transform: uppercase;
 }
 
-
 .c-border {
     padding: .4rem .6rem;
     letter-spacing: normal;
     border: 2px solid $secondaryFontColor;
     border-radius: 5px;
 }
+
 .b-border {
     letter-spacing: normal;
     border: 2px solid $secondaryFontColor;
@@ -70,4 +70,6 @@
     border-radius: 5px;
 }
 
-
+.landing-p {
+    padding: 2rem 1rem;
+}
