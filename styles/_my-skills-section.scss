@@ -1,0 +1,51 @@
+////ul for my skills
+.my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.my-skills-li {
+    padding: 1rem;
+}
+
+.education-container {
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+.ed-h1 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    text-align: center;
+    background: $primaryColor1;
+    color: $primaryBackgroundColor;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.ed-h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: $primaryFont;
+    font-style: italic;
+    color: $secondaryColor2;
+    text-align: center;
+}
+
+.ed-h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: $primaryFont;
+    color: $secondaryColor2;
+    text-align: center;
+}
+
+.bootcamp-container,
+.formal-education-container {
+    border-bottom: 2px $secondaryColor2 dotted;
+    border-top: 2px $secondaryColor2 dotted;
+    margin: 3rem 0;
+}

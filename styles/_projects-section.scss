@@ -1,22 +1,38 @@
 .projects-heading {
     font-size: 1rem;
-    margin: 1rem;
-    padding: .2rem;
-    background:  $secondaryFontColor;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background:  $primaryColor1;
+    color: $primaryBackgroundColor;
+    letter-spacing: 5px;
+    text-align: center;
 }
 
 .project-figure {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: end;
-     padding-top: 1rem;
+     justify-content: flex-end;
+    padding: 1rem;
+    margin: 1rem;
+    // border: solid 2px $secondaryColor2;
+}
+
+.see-more-h3 {
+    padding: 1.5rem 0;
+    // border-bottom: 2px solid $primaryColor1;
 }
 
 .see-more-a {
     font-size: 1rem;
-    padding-top: .8rem;
+    padding: 1.2rem;
     font-style: italic;
+}
+
+.see-more-h3:hover {
+    transform: scale(1.5);
+    transition: all .5s ease-in;
 }
 
 .project-img {
@@ -26,25 +42,29 @@
 .view-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding: .5rem;
+    width: 100%;
 }
 
 .see-project-button {
     border-radius: 5px;
-    background-color:$secondaryFontColor2;
-    font-size: 1.2rem;
-    padding: .2rem;
+    background-color:$secondaryColor2;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
     margin: 1rem;
 }
 
 .see-project-a {
-    color: $secondaryFontColor;
+    color: $secondaryColor1;
 }
 
 .project-caption {
-    padding: 2rem 1rem 0 1rem;
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border: solid 2px $secondaryColor2;
+    border-radius: 5px;
 }
 
 ////Desktop View

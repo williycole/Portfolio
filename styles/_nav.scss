@@ -1,16 +1,21 @@
 header {
     // background: #d3d6db;
+    display: flex;
+    flex-direction: row;
+     justify-content: flex-start;
+    align-items: center;
     position: fixed;
     background: $primaryBackgroundColor;
     height: 3rem;
     width: 100%;
-    z-index: 5;
+    z-index: 20;
+    box-shadow: 1px 1px 5px gray;
 }
 
 .hamburger-container{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+     justify-content: flex-end;
 }
 
 .hamburger {
@@ -26,7 +31,7 @@ header {
 .line {
     width: 15px;
     height: 3px;
-    background: $primaryFontColor;
+    background: $primaryColor1;
     margin: 3px;
 }
 
@@ -51,16 +56,19 @@ header {
 }
 
 .nav-li-a {
-    color: $primaryFontColor;
-    border-bottom: $secondaryFontColor2 dashed 2px;
+    border-bottom: $secondaryColor2 dashed 2px;
     font-weight: 800;
     font-size: 1.2rem;
 }
 
 .home-logo-a {
-    color: $secondaryFontColor;
+    color: $primaryColor1;
     padding: .5rem;
     text-decoration: none;
+}
+
+.home-log-a:hover {
+    background: none;
 }
 
 
@@ -77,7 +85,7 @@ header {
 
     .home-logo-a {
         display: flex;
-        color: $primaryFontColor;
+        color: $primaryColor1;
     }
 
     .nav-menu {
@@ -89,7 +97,6 @@ header {
 
     .nav-li-a {
         border: none;
-        color: $primaryFontColor;
     }
 
     #nav-ul {
@@ -104,7 +111,7 @@ header {
 
     #nav-links {
         display: inline;
-        color: $primaryFontColor;
+        color: $primaryColor1;
     }
 
     a.hover {
@@ -120,7 +127,7 @@ header {
         height: 1px;
         bottom: 0;
         left: 0px;
-        background: $secondaryFontColor2;
+        background: $secondaryColor1;
         transform-origin: bottom left;
         transition: transform 0.25s ease-out;
         padding-bottom: 2px;

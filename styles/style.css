@@ -1,9 +1,24 @@
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   background: #d3d6db;
   height: 3rem;
   width: 100%;
-  z-index: 5;
+  z-index: 20;
+  -webkit-box-shadow: 1px 1px 5px gray;
+          box-shadow: 1px 1px 5px gray;
 }
 
 .hamburger-container {
@@ -16,7 +31,7 @@ header {
           flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .hamburger {
@@ -63,16 +78,19 @@ header {
 }
 
 .nav-li-a {
-  color: #171C28;
   border-bottom: #495867 dashed 2px;
   font-weight: 800;
   font-size: 1.2rem;
 }
 
 .home-logo-a {
-  color: #fca311;
+  color: #171C28;
   padding: .5rem;
   text-decoration: none;
+}
+
+.home-log-a:hover {
+  background: none;
 }
 
 @media (min-width: 768px) {
@@ -106,7 +124,6 @@ header {
   }
   .nav-li-a {
     border: none;
-    color: #171C28;
   }
   #nav-ul {
     display: -webkit-box;
@@ -143,7 +160,7 @@ header {
     height: 1px;
     bottom: 0;
     left: 0px;
-    background: #495867;
+    background: #fca311;
     -webkit-transform-origin: bottom left;
             transform-origin: bottom left;
     -webkit-transition: -webkit-transform 0.25s ease-out;
@@ -228,7 +245,7 @@ header {
   border: solid 2px #495867;
   border-radius: 5px;
   background: #495867;
-  color: #fca311;
+  color: #d3d6db;
 }
 
 .dev-title {
@@ -261,9 +278,13 @@ header {
 
 .projects-heading {
   font-size: 1rem;
-  margin: 1rem;
-  padding: .2rem;
-  background: #fca311;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background: #171C28;
+  color: #d3d6db;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .project-figure {
@@ -279,14 +300,26 @@ header {
           flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
-  padding-top: 1rem;
+          justify-content: flex-end;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.see-more-h3 {
+  padding: 1.5rem 0;
 }
 
 .see-more-a {
   font-size: 1rem;
-  padding-top: .8rem;
+  padding: 1.2rem;
   font-style: italic;
+}
+
+.see-more-h3:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .project-img {
@@ -301,20 +334,21 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: .5rem;
+  width: 100%;
 }
 
 .see-project-button {
   border-radius: 5px;
   background-color: #495867;
-  font-size: 1.2rem;
-  padding: .2rem;
+  font-size: 1.3rem;
+  padding: .5rem 1rem;
   margin: 1rem;
 }
 
@@ -323,12 +357,282 @@ header {
 }
 
 .project-caption {
-  padding: 2rem 1rem 0 1rem;
+  margin: 2rem 1rem;
+  padding: 1rem;
+  border: solid 2px #495867;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
   .see-project-button {
     display: none;
+  }
+}
+
+.my-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.my-skills-li {
+  padding: 1rem;
+}
+
+.education-container {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.ed-h1 {
+  font-size: 1rem;
+  letter-spacing: 5px;
+  text-align: center;
+  background: #171C28;
+  color: #d3d6db;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.ed-h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Cousine", monospace;
+  font-style: italic;
+  color: #495867;
+  text-align: center;
+}
+
+.ed-h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Cousine", monospace;
+  color: #495867;
+  text-align: center;
+}
+
+.bootcamp-container,
+.formal-education-container {
+  border-bottom: 2px #495867 dotted;
+  border-top: 2px #495867 dotted;
+  margin: 3rem 0;
+}
+
+#contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-box {
+  padding: 1.5rem 2.5rem;
+  margin: 1rem;
+  width: 15rem;
+  border: 2px solid #495867;
+  border-radius: 5px;
+}
+
+label {
+  font-family: "Archivo Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.contact-form-btn {
+  border-radius: 5px;
+  color: #fca311;
+  background-color: #495867;
+  font-size: 1.3rem;
+  padding: .5rem 1rem;
+  margin: 1rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer-contact-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-li {
+  padding: 1rem;
+}
+
+.footer-fab {
+  color: #495867;
+  font-size: 2rem;
+}
+
+.bottom-email {
+  text-align: center;
+  font-weight: 200;
+}
+
+#designed-by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #495867;
+  font-size: .8rem;
+  padding: 1rem;
+}
+
+#side-contact-container, #side-email-container {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  footer, .bottom-email {
+    display: none;
+  }
+  .side-fab {
+    color: #495867;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  #side-contact-container {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 10;
+    height: 100vh;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  #side-contact-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin: 0px;
+    padding: 0 3rem;
+  }
+  #side-contact-ul:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    content: "";
+    border-bottom: #495867 solid 90px;
+    border-radius: 25px;
+    width: 1px;
+    padding: 0 0 0 .25px;
+    margin: 0 .4rem;
+  }
+  #side-email-pos-right {
+    position: absolute;
+    right: 4rem;
+    display: block;
+  }
+  #side-email-container {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 10;
+    height: 100vh;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    letter-spacing: normal;
+  }
+  .side-email {
+    margin: 1rem 0;
+  }
+  .side-email a {
+    color: #495867;
+    font-weight: 200;
+  }
+  #side-email-container:after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    content: "";
+    border-bottom: #495867 solid 90px;
+    border-radius: 25px;
+    width: 1px;
+    padding: 0 0 0 .25px;
+    margin: 0 .4rem;
+  }
+  .side-email a:hover, .side-fab:hover {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #171C28;
   }
 }
 
@@ -349,7 +653,13 @@ body {
 }
 
 main {
-  padding: 3rem 1.2rem 1.2rem 1.2rem;
+  padding: 4rem 1.2rem 1.2rem 1.2rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 4rem 15rem;
+  }
 }
 
 ul {
@@ -359,6 +669,11 @@ ul {
 button {
   -webkit-box-shadow: 0px 2px 8px  #1b1b1b;
           box-shadow: 0px 2px 8px  #1b1b1b;
+}
+
+.fa-github:before, .fa-github:after {
+  color: #495867;
+  font-size: 1.7rem;
 }
 
 a {
@@ -375,7 +690,7 @@ a:hover {
 }
 
 section {
-  padding-top: 1rem;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,6 +704,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 3px solid #171C28;
+}
+
+.section-heading {
+  padding: 1rem 0;
+  text-align: center;
 }
 
 .section-heading:before,
@@ -396,7 +717,7 @@ section {
   display: inline-block;
   content: "";
   border-top: #495867 solid 4px;
-  width: 3.8rem;
+  width: 2.7rem;
   margin: 6px 1rem;
 }
 

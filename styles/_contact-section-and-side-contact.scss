@@ -1,0 +1,162 @@
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form-box{
+    padding: 1.5rem 2.5rem;
+    margin: 1rem;
+    width: 15rem;
+    border: 2px solid $secondaryColor2;
+    border-radius: 5px;
+}
+
+label {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.contact-form-btn {
+    border-radius: 5px;
+    color: $secondaryColor1;
+    background-color: #495867;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    margin: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-contact-ul {
+    display: flex;
+
+}
+
+.footer-li {
+    padding: 1rem;
+}
+
+.footer-fab {
+    color: $secondaryColor2;
+    font-size: 2rem;
+}
+
+.bottom-email {
+    text-align: center;
+    font-weight: 200;
+}
+
+#designed-by {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondaryColor2;
+    font-size: .8rem;
+    padding: 1rem;
+}
+
+
+//// -----side contact below
+#side-contact-container, #side-email-container {
+    display: none;
+}
+
+////Desktop View
+@media(min-width:768px){
+    footer, .bottom-email {
+        display: none;
+    }
+
+    ////----------left side
+    .side-fab {
+        color: $secondaryColor2;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    #side-contact-container {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 10;
+        height: 100vh;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+    }
+
+    #side-contact-ul {
+        display: flex;
+        flex-direction: row;
+         justify-content: flex-end;
+        align-items: end;
+        margin: 0px;
+        padding: 0 3rem;
+    }
+
+    #side-contact-ul:after {
+        display: flex;
+        align-items: center;
+         justify-content: flex-end;
+        content: "";
+        border-bottom:  $secondaryColor2 solid 90px;
+        border-radius: 25px;
+        width: 1px;
+        padding: 0 0 0 .25px;
+        margin: 0 .4rem ;
+    }
+
+    ////----------right side
+    #side-email-pos-right {
+        position: absolute;
+        right: 4rem;
+        display: block;
+    }
+
+    #side-email-container{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        z-index: 10;
+        height: 100vh;
+        writing-mode: vertical-rl;
+        letter-spacing: normal;
+        // text-orientation: upright;
+    }
+
+    .side-email {
+        margin: 1rem 0;
+    }
+
+    .side-email a {
+        color: $secondaryColor2;
+        font-weight: 200;
+    }
+
+    #side-email-container:after {
+        display: flex;
+        align-items: center;
+         justify-content: flex-end;
+        content: "";
+        border-bottom:  $secondaryColor2 solid 90px;
+        border-radius: 25px;
+        width: 1px;
+        padding: 0 0 0 .25px;
+        margin: 0 .4rem ;
+    }
+
+    ////hover for both side contacts and email
+    .side-email a:hover, .side-fab:hover {
+        transition: all .2s ease-in-out;
+        color: $primaryColor1;
+    }
+}

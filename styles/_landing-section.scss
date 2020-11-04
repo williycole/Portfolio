@@ -41,17 +41,18 @@
 
 .dev-title-background {
     padding: .2rem;
-    border: solid 2px $secondaryFontColor2;
+    border: solid 2px $secondaryColor2;
     border-radius: 5px;
-    background: $secondaryFontColor2;
-    color: $secondaryFontColor;
+    background: $secondaryColor2;
+    color: $primaryBackgroundColor;
 }
+
 .dev-title {
     font-size: 1.2rem;
     padding: .5rem;
     letter-spacing: normal;
     font-family: $primaryFont;
-    border: 2px solid $secondaryFontColor;
+    border: 2px solid $secondaryColor1;
     border-radius: 5px;
     text-transform: uppercase;
 }
@@ -59,13 +60,13 @@
 .c-border {
     padding: .4rem .6rem;
     letter-spacing: normal;
-    border: 2px solid $secondaryFontColor;
+    border: 2px solid $secondaryColor1;
     border-radius: 5px;
 }
 
 .b-border {
     letter-spacing: normal;
-    border: 2px solid $secondaryFontColor;
+    border: 2px solid $secondaryColor1;
     padding: .4rem .6rem;
     border-radius: 5px;
 }

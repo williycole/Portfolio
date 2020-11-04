@@ -1,9 +1,11 @@
 
 ////common css, resets, and colors
+////colors
 $primaryBackgroundColor: #d3d6db;
-$primaryFontColor: #171C28;
-$secondaryFontColor: #fca311;
-$secondaryFontColor2: #495867;
+$primaryColor1: #171C28;
+$secondaryColor1: #fca311;
+$secondaryColor2: #495867;
+////fonts
 $headingFont:'Archivo Black', sans-serif;
 $primaryFont: 'Cousine', monospace;
 
@@ -11,6 +13,8 @@ $primaryFont: 'Cousine', monospace;
 @import './nav';
 @import './landing-section';
 @import './projects-section';
+@import './_my-skills-section';
+@import './_contact-section-and-side-contact';
 
 * {
     padding:0;
@@ -24,12 +28,18 @@ $primaryFont: 'Cousine', monospace;
 
 body {
     font-family: $primaryFont;
-    color: $primaryFontColor;
+    color: $primaryColor1;
     background: $primaryBackgroundColor;
 }
 
 main {
-    padding: 3rem 1.2rem 1.2rem 1.2rem;
+    padding: 4rem 1.2rem 1.2rem 1.2rem;
+}
+////Desktop View
+@media (min-width:768px) {
+    main {
+        padding: 4rem 15rem;
+    }
 }
 
 ul {
@@ -40,39 +50,52 @@ button {
     box-shadow: 0px 2px 8px  #1b1b1b;
 }
 
+.fa-github:before, .fa-github:after {
+    color:$secondaryColor2;
+    font-size: 1.7rem;
+}
+
 a {
-    color: $primaryFontColor;
+    color: $primaryColor1;
     text-decoration: none;
 }
 
 a:hover {
-    color:$secondaryFontColor;
+    color:$secondaryColor1;
     transform: scale(1.2);
-    transition: all .3s ease-in-out
+    transition: all .3s ease-in-out;
 }
 
 section {
-    padding-top:1rem ;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid $primaryColor1;
 }
+
+.section-heading {
+    padding: 1rem 0;
+    text-align: center;
+}
+
 .section-heading:before,
 .section-heading:after {
         display: inline-block;
         content: "";
-        border-top:  $secondaryFontColor2 solid 4px;
-        width: 3.8rem;
+        border-top:  $secondaryColor2 solid 4px;
+        width: 2.7rem;
         margin: 6px 1rem ;
 }
+
 ////Desktop View
 @media(min-width:768px){
     .section-heading:before,
     .section-heading:after {
         display: inline-block;
         content: "";
-        border-top:  $secondaryFontColor2 solid 4px;
+        border-top:  $secondaryColor2 solid 4px;
         width: 5.7rem;
         margin: 6px 1rem ;
     }
