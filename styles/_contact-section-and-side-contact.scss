@@ -65,12 +65,13 @@ footer {
 
 
 //// -----side contact below
-#side-contact-container, #side-email-container {
+#side-contact-container,
+#side-email-pos-right {
     display: none;
 }
 
 ////Desktop View
-@media(min-width:768px){
+@media(min-width:1060px){
     footer, .bottom-email {
         display: none;
     }

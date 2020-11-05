@@ -25,20 +25,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
+  z-index: 20;
 }
 
 .hamburger {
+  text-align: right;
   display: block;
-  padding: 1rem 1.5rem;
-  position: fixed;
-  z-index: 10;
+  margin: 1rem 2rem;
+  z-index: 20;
   background: none;
   border: none;
   -webkit-box-shadow: none;
@@ -53,12 +51,16 @@ header {
 }
 
 .nav-menu {
+  position: absolute;
   background: #d3d6db;
   display: none;
+  margin-top: 12rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
+  -webkit-box-shadow: 0 4px 2px -1px gray;
+          box-shadow: 0 4px 2px -1px gray;
 }
 
 #nav-links {
@@ -107,9 +109,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #171C28;
+    color: #495867;
   }
   .nav-menu {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,11 +124,10 @@ header {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-  }
-  .nav-li-a {
-    border: none;
+    margin: 0;
   }
   #nav-ul {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -143,9 +145,9 @@ header {
     height: 3rem;
     text-transform: uppercase;
   }
-  #nav-links {
-    display: inline;
-    color: #171C28;
+  .nav-li-a {
+    border: none;
+    color: #495867;
   }
   a.hover {
     display: inline-block;
@@ -307,12 +309,14 @@ header {
 
 .see-more-h3 {
   padding: 1.5rem 0;
+  text-align: center;
 }
 
 .see-more-a {
   font-size: 1rem;
   padding: 1.2rem;
   font-style: italic;
+  color: #495867;
 }
 
 .see-more-h3:hover {
@@ -364,8 +368,65 @@ header {
 }
 
 @media (min-width: 768px) {
-  .see-project-button {
-    display: none;
+  #all-projects-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .figure-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects-heading {
+    width: 40rem;
+  }
+  .project-figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  .project-caption {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+  .view-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+  }
+  .see-more-container {
+    text-align: center;
   }
 }
 
@@ -425,6 +486,19 @@ header {
   border-bottom: 2px #495867 dotted;
   border-top: 2px #495867 dotted;
   margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .my-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 12rem;
+  }
 }
 
 #contact-form {
@@ -517,11 +591,12 @@ footer {
   padding: 1rem;
 }
 
-#side-contact-container, #side-email-container {
+#side-contact-container,
+#side-email-pos-right {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1060px) {
   footer, .bottom-email {
     display: none;
   }
@@ -682,7 +757,7 @@ a {
 }
 
 a:hover {
-  color: #fca311;
+  color: #171C28;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all .3s ease-in-out;
@@ -722,18 +797,54 @@ section {
 }
 
 @media (min-width: 768px) {
+  section {
+    border: none;
+  }
   .section-heading:before,
   .section-heading:after {
-    display: inline-block;
-    content: "";
-    border-top: #495867 solid 4px;
-    width: 5.7rem;
-    margin: 6px 1rem;
+    display: none;
+  }
+  .section-heading {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 3.5rem;
   }
 }
 
 h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   font-family: "Archivo Black", sans-serif;
+}
+
+@media (min-width: 768px) {
+  #about-section,
+  #projects-section,
+  #skills-section,
+  #contact-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 40rem;
+  }
+  .section-heading {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

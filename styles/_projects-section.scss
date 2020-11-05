@@ -21,6 +21,7 @@
 
 .see-more-h3 {
     padding: 1.5rem 0;
+    text-align: center;
     // border-bottom: 2px solid $primaryColor1;
 }
 
@@ -28,6 +29,7 @@
     font-size: 1rem;
     padding: 1.2rem;
     font-style: italic;
+    color: $secondaryColor2;
 }
 
 .see-more-h3:hover {
@@ -69,13 +71,46 @@
 
 ////Desktop View
 @media(min-width:768px){
-    .see-project-button {
-        display:none;
+
+    #all-projects-container {
+        display: flex;
+        flex-direction: column;
     }
 
-    // .see-project-button:hover {
+    .figure-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        //     transform: scale(1.2);
-        //     transition: all .3s ease-in-out
-        // }
+    .projects-heading {
+        width: 40rem;
+    }
+
+    .project-figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .project-caption{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .view-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .see-more-container {
+        text-align: center;
+    }
+
 }

@@ -49,3 +49,12 @@
     border-top: 2px $secondaryColor2 dotted;
     margin: 3rem 0;
 }
+
+////Desktop View Sections
+@media (min-width:768px){
+    .my-skills {
+        display: flex;
+        flex-direction: row;
+        width: 12rem;
+    }
+}

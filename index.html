@@ -15,17 +15,6 @@
 
 <body>
     <header>
-        <div class="hamburger-container">
-            <button class="hamburger" onclick="toggleNav()">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
-        </div>
-
-        <div class="home-logo-container">
-            <h1 class="home-logo"><a href="#landing-section" class="home-logo-a">CB</a></h1>
-        </div>
         <nav class="nav-menu">
             <ul id="nav-ul">
                 <li class="nav-li"><a href="#" class="hover nav-li-a">Projects</a></li>
@@ -34,6 +23,22 @@
                 <li class="nav-li"><a href="#" class="hover nav-li-a">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="home-logo-container">
+            <h1 class="home-logo"><a href="#landing-section" class="home-logo-a">CB</a></h1>
+        </div>
+
+
+        <div class="hamburger-container">
+            <button class="hamburger" onclick="toggleNav()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+
+
+
     </header>
 
     <div id="side-contact-container">
@@ -94,86 +99,96 @@
 
         <section id="projects-section">
             <h1 class="section-heading">Projects</h1>
-            <figure class="project-figure">
-                <h2 class="projects-heading">Rock Paper Scissors RPG Game</h2>
-                <img src="./pictures/projects/RockPaperScissors.PNG" alt="" class="project-img">
-                <figcaption class="project-caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                </figcaption>
-                <div class="view-container">
-                    <button class="see-project-button">
-                        <a href="https://williycole.github.io/07-challenge-rock-paper-scissors/" class="see-project-a">
-                            View
-                        </a>
-                    </button>
-                    <i class="fab fa-github"></i>
+            <div id="all-projects-container">
+                <div class="figure-container">
+                    <h2 class="projects-heading">Rock Paper Scissors RPG Game</h2>
+                    <figure class="project-figure">
+                        <img src="./pictures/projects/RockPaperScissors.PNG" alt="" class="project-img">
+                        <figcaption class="project-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </figcaption>
+                        <div class="view-container">
+                            <button class="see-project-button">
+                                <a href="https://williycole.github.io/07-challenge-rock-paper-scissors/"
+                                    class="see-project-a">
+                                    View
+                                </a>
+                            </button>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </figure>
                 </div>
 
-            </figure>
-
-            <figure class="project-figure">
-                <h2 class="projects-heading">Sprite Page Clone</h2>
-                <img src="./pictures/projects/obeyYourThirst.PNG" alt="" class="project-img">
-                <figcaption class="project-caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                </figcaption>
-                <div class="view-container">
-                    <button class="see-project-button">
-                        <a href="https://williycole.github.io/Obey-Your-Thirst-Assets/" class="see-project-a">
-                            View
-                        </a>
-                    </button>
-                    <i class="fab fa-github"></i>
+                <div class="figure-container">
+                    <h2 class="projects-heading">Sprite Page Clone</h2>
+                    <figure class="project-figure">
+                        <img src="./pictures/projects/obeyYourThirst.PNG" alt="" class="project-img">
+                        <figcaption class="project-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </figcaption>
+                        <div class="view-container">
+                            <button class="see-project-button">
+                                <a href="https://williycole.github.io/Obey-Your-Thirst-Assets/" class="see-project-a">
+                                    View
+                                </a>
+                            </button>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </figure>
                 </div>
-            </figure>
 
-            <figure class="project-figure">
-                <h2 class="projects-heading">Landing Page</h2>
-                <img src="./pictures/projects/IronMindLandingPage.PNG" alt="" class="project-img">
-                <figcaption class="project-caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                </figcaption>
-                <div class="view-container">
-                    <button class="see-project-button">
-                        <a href="https://williycole.github.io/02-challenge-landing-page/" class="see-project-a">
-                            View
-                        </a>
-                    </button>
-                    <i class="fab fa-github"></i>
+                <div class="figure-container">
+                    <h2 class="projects-heading">Landing Page</h2>
+                    <figure class="project-figure">
+                        <img src="./pictures/projects/IronMindLandingPage.PNG" alt="" class="project-img">
+                        <figcaption class="project-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </figcaption>
+                        <div class="view-container">
+                            <button class="see-project-button">
+                                <a href="https://williycole.github.io/02-challenge-landing-page/" class="see-project-a">
+                                    View
+                                </a>
+                            </button>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </figure>
                 </div>
-            </figure>
 
-            <figure class="project-figure">
-                <h2 class="projects-heading">Mock Travel/Hotel Site</h2>
-                <img src="./pictures/projects/MockHotelSite.PNG" alt="" class="project-img">
-                <figcaption class="project-caption">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                </figcaption>
-                <div class="view-container">
-                    <button class="see-project-button">
-                        <a href="https://williycole.github.io/03-challenge-travel-fed-responsive-design/"
-                            class="see-project-a">
-                            View
-                        </a>
-                    </button>
-                    <i class="fab fa-github"></i>
+                <div class="figure-container">
+                    <h2 class="projects-heading">Mock Travel/Hotel Site</h2>
+                    <figure class="project-figure">
+                        <img src="./pictures/projects/MockHotelSite.PNG" alt="" class="project-img">
+                        <figcaption class="project-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </figcaption>
+                        <div class="view-container">
+                            <button class="see-project-button">
+                                <a href="https://williycole.github.io/03-challenge-travel-fed-responsive-design/"
+                                    class="see-project-a">
+                                    View
+                                </a>
+                            </button>
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </figure>
                 </div>
-            </figure>
-
-            <div class="see-more-container">
-                <h3 class="see-more-h3">
-                    <a href="https://github.com/williycole?tab=repositories" class="see-more-a">
-                        See more of my
-                        projects
-                    </a>
-                </h3>
             </div>
-
         </section>
+        <!-- moved to insde last container -->
+
+        <div class="see-more-container">
+            <h3 class="see-more-h3">
+                <a href="https://github.com/williycole?tab=repositories" class="see-more-a">
+                    See more of my
+                    projects
+                </a>
+            </h3>
+        </div>
 
 
 
@@ -181,7 +196,7 @@
             <div class="about-h1-container">
                 <h1 class="section-heading">About</h1>
             </div>
-            <div class="about-p-container">
+            <div class="content-container">
                 <p class="about-p">
                     Erat velit scelerisque in dictum non consectetur. Viverra nibh cras pulvinar mattis nunc sed. Mauris
                     commodo quis imperdiet massa tincidunt. Rhoncus est pellentesque elit ullamcorper dignissim cras
@@ -202,8 +217,8 @@
 
 
         <section id="skills-section">
+            <h1 class="section-heading">Skills</h1>
             <div class="coding-skills-container">
-                <h1 class="section-heading">My Skills</h1>
                 <ul class="my-skills">
                     <li class="my-skills-li">JavaScript</li>
                     <li class="my-skills-li">React</li>
@@ -234,14 +249,17 @@
 
 
         <section id="contact-section">
-            <h1 class="section-heading">Contact Me</h1>
-            <form action="https://airform.io/william.cole.boren@gmail.com" method="post" id="contact-form">
-                <label>Name</label>
-                <input type="text" name="name" placeholder="Enter your name" class="form-box">
-                <label>Message</label>
-                <textarea name="message" placeholder="Enter your message" class="form-box"></textarea>
-                <button class="contact-form-btn">Send</button>
-            </form>
+            <h1 class="section-heading">Contact</h1>
+            <div class="content-container">
+                <form action="https://airform.io/william.cole.boren@gmail.com" method="post" id="contact-form">
+                    <label>Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" class="form-box">
+                    <label>Message</label>
+                    <textarea name="message" placeholder="Enter your message" class="form-box"></textarea>
+                    <button class="contact-form-btn">Send</button>
+                </form>
+            </div>
+
         </section>
 
 
@@ -257,7 +275,7 @@
         </ul>
     </footer>
     <h5 class="bottom-email"><a href="mailto:william.cole.boren@.com">william.cole.boren@gmail.com</a></h5>
-    <div id="designed-by">Designed & Built by Cole Boren</div>
+    <!-- <div id="designed-by">Cole Boren</div> -->
 
 
     <script src="./js/script.js"></script>
