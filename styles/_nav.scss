@@ -79,7 +79,7 @@ header {
     text-decoration: none;
 }
 
-.home-log-a:hover {
+.home-logo-a:hover {
     background: none;
 }
 
@@ -98,6 +98,10 @@ header {
     .home-logo-a {
         display: flex;
         color: $secondaryColor2;
+    }
+
+    .home-logo-a:hover {
+        color: $primaryColor1;
     }
 
     .nav-menu {
@@ -121,13 +125,14 @@ header {
     }
 
     .nav-li-a {
+        display:inline-block;
+        position: relative;
         border: none;
         color: $secondaryColor2;
     }
 
-    a.hover {
-        display:inline-block;
-        position: relative;
+    .nav-li-a:hover {
+        color: $primaryColor1;
     }
 
     .hover::before {

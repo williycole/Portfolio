@@ -1,8 +1,36 @@
+/* ******************************************
+ *******************************************
+ *
+ *
+ *
+ * This document contains all the
+ * styling for the game.
+ *
+ *
+ /*******************************************
+ *******************************************
+ *
+ *
+ * 00. common & reset css
+ * 01. landing-section
+ * 02. projects & about
+ * 03. Skills & education
+ * 04. contact
+ *
+ *---nav and side contacts in other style sheets
+/*****************************
+ *   00. common & reset css
+ *****************************
+ *
+ */
+
 
 ////common css, resets, and colors
 ////colors
 $primaryBackgroundColor: #d3d6db;
+$secondaryBackgroundColor: #323d55;
 $primaryColor1: #171C28;
+$primaryColor2:#1b1b1b;
 $secondaryColor1: #fca311;
 $secondaryColor2: #495867;
 ////fonts
@@ -11,9 +39,7 @@ $primaryFont: 'Cousine', monospace;
 
 ////Imports for page sections
 @import './nav';
-@import './landing-section';
-@import './projects-section';
-@import './_my-skills-section';
+@import './_about-and-my-skills-section';
 @import './_contact-section-and-side-contact';
 
 * {
@@ -33,35 +59,33 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 4rem 1.2rem 1.2rem 1.2rem;
-}
-////Desktop View
+}////Desktop View
 @media (min-width:768px) {
     main {
-        padding: 4rem 15rem;
+        padding: 3rem 10rem;
     }
-}
+}////
 
 ul {
     list-style: none;
+}
+
+a {
+    color: $primaryBackgroundColor;
+    text-decoration: none;
 }
 
 button {
     box-shadow: 0px 2px 8px  #1b1b1b;
 }
 
-.fa-github:before, .fa-github:after {
-    color:$secondaryColor2;
-    font-size: 1.7rem;
-}
-
-a {
-    color: $primaryColor1;
-    text-decoration: none;
-}
-
-a:hover {
-    color:$primaryColor1;
+a:hover, button:hover {
+    color:$secondaryColor1;
     transform: scale(1.2);
     transition: all .3s ease-in-out;
 }
@@ -89,52 +113,11 @@ section {
         margin: 6px 1rem ;
 }
 
-////Desktop View
+////Tablet View
 @media(min-width:768px){
 
     section {
         border: none;
-    }
-
-    .section-heading:before,
-    .section-heading:after {
-        display: none;
-        // display: inline-block;
-        // content: "";
-        // border-top:  $secondaryColor2 solid 4px;
-        // width: 5.7rem;
-        // margin: 6px 1rem ;
-    }
-
-    .section-heading {
-        padding: 1rem 2rem;
-        text-align: center;
-        font-size: 3.5rem;
-    }
-}
-
-h1, h2, h3, h4, h5 {
-    text-transform: uppercase;
-    font-family: $headingFont;
-}
-
-
-
-
-
-
-
-
-
-
-////Desktop View Sections
-@media (min-width:768px){
-    #about-section,
-    #projects-section,
-    #skills-section,
-    #contact-section {
-        display: flex;
-        flex-direction: row;
     }
 
     .content-container {
@@ -144,15 +127,332 @@ h1, h2, h3, h4, h5 {
     }
 
     .section-heading {
+        padding: 1rem 2rem;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+}
+
+////Desktop View
+@media (min-width:1500px){
+    .section-heading:before,
+    .section-heading:after {
+    display: none;
+}
+    .section-heading-container {
+         height: 40rem;
+    }
+
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    font-family: $headingFont;
+}
+
+
+/*****************************
+ *   01. landing-section
+ *****************************
+ *
+ */
+
+ .landing-heading-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+}
+
+.name-container {
+    letter-spacing: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $headingFont;
+    width: 100%;
+}
+
+.last-name-container {
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 1.2rem;
+}
+
+.name-middle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-right: 5.9rem;
+}
+
+.name-last {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.name-middle-e {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-right: 5.9rem;
+}
+
+.dev-title-background {
+    padding: .2rem;
+    border: solid 2px $secondaryColor2;
+    border-radius: 5px;
+    background: $secondaryColor2;
+    color: $primaryBackgroundColor;
+}
+
+.dev-title {
+    font-size: 1.2rem;
+    padding: .5rem;
+    letter-spacing: normal;
+    font-family: $primaryFont;
+    border: 2px solid $secondaryColor1;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.c-border {
+    padding: .4rem .6rem;
+    letter-spacing: normal;
+    border: 2px solid $secondaryColor1;
+    border-radius: 5px;
+}
+
+.b-border {
+    letter-spacing: normal;
+    border: 2px solid $secondaryColor1;
+    padding: .4rem .6rem;
+    border-radius: 5px;
+}
+
+.landing-p {
+    padding: 2rem 1rem;
+}
+
+
+
+
+ /*****************************
+ *   02. projects & about
+ *****************************
+ *
+ */
+
+#projects-h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 1rem 0 0;
+    font-size: 1.5rem;
+    writing-mode: unset;
+    text-orientation: sideways;
+    background: none;
+    color: $primaryColor1;
+    letter-spacing: 1rem;
+    height: auto;
+}
+
+.projects-heading {
+    font-size: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background:  $primaryColor1;
+    color: $primaryBackgroundColor;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.project-figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     justify-content: flex-end;
+    padding: 1rem;
+    margin: 1rem;
+    // border: solid 2px $secondaryColor2;
+}
+
+.view-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem;
+    width: 100%;
+}
+
+.see-more-h3 {
+    padding: 1.5rem 0;
+    text-align: center;
+    // border-bottom: 2px solid $primaryColor1;
+}
+
+.view-container i {
+    color: $secondaryBackgroundColor;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    // font-style: italic;
+}
+
+.see-more-a:hover {
+    color: $secondaryColor1;
+}
+
+.see-more-a:visited {
+    color: $primaryBackgroundColor;
+}
+
+.project-img {
+    border: 1px solid $secondaryColor2;
+    border-radius: 5px;
+    width: 23rem;
+}
+
+.see-project-button {
+    border-radius: 5px;
+    border: 1px solid $secondaryColor1;
+    background-color:$secondaryColor2;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    margin: 1rem;
+}
+
+.project-caption {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border: solid 2px $secondaryColor2;
+    border-radius: 5px;
+}
+
+
+
+
+//////////////////////////////////////projects-section
+////Desktop View
+
+@media(min-width:1500px){
+
+    #projects-h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0 1rem 0 0;
+        font-size: 3.5rem;
         writing-mode: vertical-rl;
         text-orientation: upright;
-
+        color: $primaryBackgroundColor;
+        background: $primaryColor1;
+        letter-spacing: 1rem;
         height: 100%;
     }
 
+    #projects-section {
+        padding: 0;
+        margin: 0;
+        border: solid 2px $secondaryBackgroundColor;
+        display: flex;
+        flex-direction: row;
+    }
 
+    #all-projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .figure-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        margin: 2rem;
+        width: 80%;
+        background: $secondaryBackgroundColor;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px gray;
+    }
+
+    .projects-heading {
+        background: none;
+        color: $secondaryColor1;
+        font-size: 1.5rem;
+    }
+
+    .project-figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0 3rem 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .project-img {
+        border: 1px solid $secondaryColor2;
+        border-radius: 5px;
+        width: 28rem;
+    }
+
+    .project-caption{
+        color: $secondaryColor2;
+        border: 2px solid $secondaryColor2;
+        background: $primaryBackgroundColor;
+        padding: 1rem;
+        margin: 1rem;
+        width: auto;
+        height: auto;
+        line-height: 1.5rem;
+    }
+
+    .view-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .fa-github{
+        font-size: 1.7rem;
+        color: $secondaryColor2;
+    }
+
+
+    .see-more-container {
+        color: $secondaryBackgroundColor;
+        text-align: center;
+    }
 
 }
+
+@media(min-width:1730px){
+    .project-figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 0 3rem 0;
+        margin: 0;
+        width: auto;
+    }
+}
+
+
+
+
+
+
 
 
 

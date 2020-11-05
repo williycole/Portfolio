@@ -1,3 +1,30 @@
+////------About Section
+#about-section {
+    // di
+}
+
+#projects-h1 {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0 1rem 0 0;
+    font-size: 4.5rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: $primaryBackgroundColor;
+    background: $primaryColor1;
+    letter-spacing: 1rem;
+    height: 142rem;
+}
+
+
+
+
+
 ////ul for my skills
 .my-skills {
     display: flex;
