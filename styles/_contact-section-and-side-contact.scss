@@ -1,3 +1,17 @@
+#contact-section {
+    border: 2px solid $secondaryColor1;
+    border-radius: 5px;
+    background: $secondaryBackgroundColor;
+}
+
+.contact-heading, label {
+    color: $primaryBackgroundColor;
+}
+
+.contact-heading {
+    padding: 2rem;
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
@@ -21,8 +35,9 @@ label {
 
 .contact-form-btn {
     border-radius: 5px;
-    color: $secondaryColor1;
-    background-color: #495867;
+    border: 1px solid $secondaryColor1;
+    background-color:$secondaryColor2;
+    color: $primaryBackgroundColor;
     font-size: 1.3rem;
     padding: .5rem 1rem;
     margin: 1rem;
@@ -110,9 +125,9 @@ footer {
         content: "";
         border-bottom:  $secondaryColor2 solid 90px;
         border-radius: 25px;
-        width: 1px;
+        width: 2px;
         padding: 0 0 0 .25px;
-        margin: 0 .4rem ;
+        margin: 0 .5rem ;
     }
 
     ////----------right side
@@ -131,7 +146,6 @@ footer {
         height: 100vh;
         writing-mode: vertical-rl;
         letter-spacing: normal;
-        // text-orientation: upright;
     }
 
     .side-email {

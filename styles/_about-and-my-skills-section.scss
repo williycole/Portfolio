@@ -1,13 +1,13 @@
 ////------Skills Section
 ////ul for my skills
-.coding-skills-container{
+.skills-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.my-skills {
+.my-skills-ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -32,6 +32,7 @@
     color: $primaryBackgroundColor;
     border-radius: 5px;
     margin-top: 1rem;
+    width: 80%;
 }
 
 .ed-h2 {
@@ -56,29 +57,92 @@
     border-bottom: 2px $secondaryColor2 dotted;
     border-top: 2px $secondaryColor2 dotted;
     margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-p {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: left;
+    line-height: 1.5rem;
+    border: 2px solid $secondaryBackgroundColor;
+    border-radius: 5px;
+}
+
+.about-p-container {
+    text-align: center;
+}
+
+.below {
+    color: $secondaryBackgroundColor;
 }
 
 ////Desktop View Sections
 @media (min-width:768px){
-    .my-skills {
+    .below {
+        text-align: center;
+        color: $primaryBackgroundColor;
+    }
+
+    #skills-and-education-container {
         display: flex;
         flex-direction: row;
-        width: 12rem;
-    }
-}
-
-////------About Section
-@media(min-width:1500px){
-   #about-and-skills-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 2px black;
-    padding: 1rem;
-    width: 100%;
     }
 
+    .skills-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: $secondaryBackgroundColor;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px gray;
+        margin: 2rem;
+        width: 20rem;
+    }
+
+    #skills-h1 {
+        color: $primaryBackgroundColor;
+        background: $primaryColor1;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        font-size: 2.5rem;
+    }
+
+    .my-skills-ul {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        color: $primaryBackgroundColor;
+    }
+
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $secondaryBackgroundColor;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px gray;
+        margin: 2rem;
+    }
+
+    #education-h1 {
+        margin: 1rem;
+        color: $primaryBackgroundColor;
+        background: $primaryColor1;
+        font-size: 2.5rem;
+    }
+    .bootcamp-container,
+    .formal-education-container{
+        margin: 2rem;
+    }
+
+    .ed-h1, .ed-h2, .ed-h3 {
+        color: $primaryBackgroundColor;
+    }
     .about-p-container {
         display: flex;
         flex-direction: column;
@@ -91,14 +155,28 @@
         box-shadow: 5px 5px 5px gray;
     }
 
-    .about-p {
+      .about-p {
         background: $primaryBackgroundColor;
         color: $secondaryColor2;
         padding: 1rem;
         margin: 1rem;
         border: 1px solid $secondaryColor2;
         border-radius: 5px;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
+}
+
+////------About Section
+@media(min-width:1500px){
+    #about-and-skills-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem;
+     width: 100%;
+     }
 
     #about-h1 {
         display: flex;
@@ -110,6 +188,5 @@
         color: $primaryBackgroundColor;
         background: #171C28;
         letter-spacing: 1rem;
-        // width: 100%;
     }
 }

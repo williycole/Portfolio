@@ -59,13 +59,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem 1.2rem 1.2rem 1.2rem;
-}////Desktop View
-@media (min-width:768px) {
-    main {
-        padding: 3rem 10rem;
-    }
-}////
+}
 
 ul {
     list-style: none;
@@ -93,11 +87,13 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid $secondaryBackgroundColor;
 }
 
 .section-heading {
     padding: 1rem 0;
     text-align: center;
+    border-radius: 5px;
 }
 
 .section-heading:before,
@@ -112,8 +108,9 @@ section {
 ////Tablet View
 @media(min-width:768px){
 
-    section {
-        border: none;
+    .section-heading:before,
+    .section-heading:after {
+    display: none;
     }
 
     .content-container {
@@ -129,18 +126,6 @@ section {
     }
 }
 
-////Desktop View
-@media (min-width:1500px){
-    .section-heading:before,
-    .section-heading:after {
-    display: none;
-}
-    // .section-heading-container {
-    //      height: 40rem;
-    // }
-
-}
-
 h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     font-family: $headingFont;
@@ -152,25 +137,10 @@ h1, h2, h3, h4, h5 {
  *****************************
  *
  */
-
- #slideshow-container {
-     background: none;
- }
-
- .my-pics-imgs {
-     position: relative;
-     width: 15rem;
-     border: 1px solid $secondaryColor2;
-     box-shadow: 0px 2px 8px  $primaryColor2;
-     border-radius: 2rem;
-     margin: 1.5rem;
- }
-
-
-
- .landing-heading-container {
+.landing-heading-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     padding: 1rem;
     width: 100%;
@@ -213,7 +183,7 @@ h1, h2, h3, h4, h5 {
     padding: .2rem;
     border: solid 2px $secondaryColor2;
     border-radius: 5px;
-    background: $secondaryColor2;
+    background: $secondaryBackgroundColor;
     color: $primaryBackgroundColor;
 }
 
@@ -241,9 +211,64 @@ h1, h2, h3, h4, h5 {
     border-radius: 5px;
 }
 
+#landing-figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $secondaryBackgroundColor;
+    width: 80%;
+    border-radius: 5px;
+}
+
+ #slideshow-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+.overlay {
+    width: 15rem;
+    height: 18rem;
+    border-radius: 2rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    background: #d3d6db4f;
+    border: $primaryColor1 2px solid;
+    z-index: 5;
+ }
+
+.overlay:hover {
+    background: none;
+    border: 2px solid $secondaryColor1;
+    border-radius: 2rem;
+    padding: 1.2rem 1.5;
+}
+
+.my-pics-imgs {
+     position: relative;
+     width: 15rem;
+     border: 1px solid $secondaryColor2;
+     box-shadow: 0px 2px 8px  $primaryColor2;
+     border-radius: 2rem;
+     margin: 1.5rem;
+     z-index: 4;
+ }
+
+.landing-p-container {
+    text-align: center;
+    color: $primaryBackgroundColor;;
+}
+
 .landing-p {
     padding: 2rem 1rem;
 }
+
 //// Desktop and Tablet View
 @media(min-width:768px){
     .name-middle {
@@ -262,8 +287,8 @@ h1, h2, h3, h4, h5 {
 
     .dev-title-background {
         padding: .2rem;
-        border: solid 5px $secondaryColor2;
-        background: $secondaryColor2;
+        border: solid 2px $secondaryColor2;
+        background: $secondaryBackgroundColor;
         color: $primaryBackgroundColor;
     }
 
@@ -274,8 +299,7 @@ h1, h2, h3, h4, h5 {
         padding: 1rem;
         letter-spacing: normal;
         font-family: $primaryFont;
-        border: 2px solid $secondaryColor1;
-        border-radius: 5px;
+        border: 3px solid $secondaryColor1;
         text-transform: uppercase;
         width: 35rem;
     }
@@ -294,8 +318,20 @@ h1, h2, h3, h4, h5 {
         border-radius: 5px;
     }
 
+    .landing-p-container {
+        width: 70%;
+        text-align: center;
+    }
+
+    .landing-p {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+
     .landing-p {
         padding: 2rem 1rem;
+        text-align: center;
     }
 }
 
@@ -312,8 +348,6 @@ h1, h2, h3, h4, h5 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-//    padding: 1rem;
-    margin: 0 1rem 0 0;
     font-size: 1.5rem;
     background: none;
     color: $primaryColor1;
@@ -339,7 +373,6 @@ h1, h2, h3, h4, h5 {
      justify-content: flex-end;
     padding: 1rem;
     margin: 1rem;
-    // border: solid 2px $secondaryColor2;
 }
 
 .view-container {
@@ -361,7 +394,6 @@ h1, h2, h3, h4, h5 {
     color: $secondaryBackgroundColor;
     font-size: 1.5rem;
     padding: 1.2rem;
-    color: $primaryBackgroundColor;
 }
 
 .see-more-a {
@@ -397,14 +429,34 @@ h1, h2, h3, h4, h5 {
     padding: 1rem;
     border: solid 2px $secondaryColor2;
     border-radius: 5px;
+    width: 80%;
 }
 
+////Tablet View
+@media(min-width:768px){
+    .figure-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
 
+    .projects-heading {
+        font-size: 1.2rem;
+        width: 25rem;
+    }
 
+    #projects-h1 {
+        font-size: 2.5rem;
+    }
 
-//////////////////////////////////////projects-section
+    .project-caption {
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
 ////Desktop View
-
 @media(min-width:1500px){
 
     .projects-h1-container {
@@ -428,7 +480,7 @@ h1, h2, h3, h4, h5 {
     #projects-section {
         padding: 0;
         margin: 0;
-        border: solid 2px $secondaryBackgroundColor;
+        // border: solid 2px $secondaryBackgroundColor;
         display: flex;
         flex-direction: column;
     }
@@ -445,7 +497,7 @@ h1, h2, h3, h4, h5 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 2rem;
+        padding: 2rem 2rem 3rem 2rem;
         margin: 2rem;
         width: 80%;
         background: $secondaryBackgroundColor;
@@ -464,7 +516,6 @@ h1, h2, h3, h4, h5 {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        padding: 0 0 3rem 0;
         margin: 0;
         width: auto;
     }
@@ -492,11 +543,11 @@ h1, h2, h3, h4, h5 {
         width: auto;
     }
 
-    .fa-github{
-        font-size: 1.7rem;
+    .view-container i {
         color: $primaryBackgroundColor;
+        font-size: 1.5rem;
+        padding: 1.2rem;
     }
-
 
     .see-more-container {
         color: $secondaryBackgroundColor;
