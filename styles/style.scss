@@ -16,24 +16,20 @@
  * 02. projects & about
  * 03. Skills & education
  * 04. contact
- *
+ * 05. about & Skills
  *---nav and side contacts in other style sheets
 /*****************************
  *   00. common & reset css
  *****************************
  *
  */
-
-
-////common css, resets, and colors
-////colors
 $primaryBackgroundColor: #d3d6db;
 $secondaryBackgroundColor: #323d55;
 $primaryColor1: #171C28;
 $primaryColor2:#1b1b1b;
 $secondaryColor1: #fca311;
 $secondaryColor2: #495867;
-////fonts
+
 $headingFont:'Archivo Black', sans-serif;
 $primaryFont: 'Cousine', monospace;
 
@@ -81,7 +77,7 @@ a {
 }
 
 button {
-    box-shadow: 0px 2px 8px  #1b1b1b;
+    box-shadow: 0px 2px 8px $primaryColor2;
 }
 
 a:hover, button:hover {
@@ -92,11 +88,11 @@ a:hover, button:hover {
 
 section {
     padding: 2rem 0;
+    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid $primaryColor1;
 }
 
 .section-heading {
@@ -139,9 +135,9 @@ section {
     .section-heading:after {
     display: none;
 }
-    .section-heading-container {
-         height: 40rem;
-    }
+    // .section-heading-container {
+    //      height: 40rem;
+    // }
 
 }
 
@@ -156,6 +152,21 @@ h1, h2, h3, h4, h5 {
  *****************************
  *
  */
+
+ #slideshow-container {
+     background: none;
+ }
+
+ .my-pics-imgs {
+     position: relative;
+     width: 15rem;
+     border: 1px solid $secondaryColor2;
+     box-shadow: 0px 2px 8px  $primaryColor2;
+     border-radius: 2rem;
+     margin: 1.5rem;
+ }
+
+
 
  .landing-heading-container {
     display: flex;
@@ -233,7 +244,60 @@ h1, h2, h3, h4, h5 {
 .landing-p {
     padding: 2rem 1rem;
 }
+//// Desktop and Tablet View
+@media(min-width:768px){
+    .name-middle {
+        font-size: 3rem;
+        padding-right: 7.5rem;
+    }
 
+    .name-last {
+        font-size: 3rem;
+    }
+
+    .name-middle-e {
+        font-size: 3rem;
+        padding-right: 7.5rem;
+    }
+
+    .dev-title-background {
+        padding: .2rem;
+        border: solid 5px $secondaryColor2;
+        background: $secondaryColor2;
+        color: $primaryBackgroundColor;
+    }
+
+    .dev-title {
+        display: flex;
+        justify-content: center;
+        font-size: 2.8rem;
+        padding: 1rem;
+        letter-spacing: normal;
+        font-family: $primaryFont;
+        border: 2px solid $secondaryColor1;
+        border-radius: 5px;
+        text-transform: uppercase;
+        width: 35rem;
+    }
+
+    .c-border {
+        padding: .8rem 1rem;
+        letter-spacing: normal;
+        border: 3px solid $secondaryColor1;
+        border-radius: 5px;
+    }
+
+    .b-border {
+        letter-spacing: normal;
+        border: 3px solid $secondaryColor1;
+        padding: .8rem 1rem;
+        border-radius: 5px;
+    }
+
+    .landing-p {
+        padding: 2rem 1rem;
+    }
+}
 
 
 
@@ -248,11 +312,9 @@ h1, h2, h3, h4, h5 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0;
+//    padding: 1rem;
     margin: 0 1rem 0 0;
     font-size: 1.5rem;
-    writing-mode: unset;
-    text-orientation: sideways;
     background: none;
     color: $primaryColor1;
     letter-spacing: 1rem;
@@ -287,28 +349,33 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     padding: .5rem;
     width: 100%;
+    color: $primaryBackgroundColor;
 }
 
 .see-more-h3 {
     padding: 1.5rem 0;
     text-align: center;
-    // border-bottom: 2px solid $primaryColor1;
 }
 
 .view-container i {
     color: $secondaryBackgroundColor;
     font-size: 1.5rem;
     padding: 1.2rem;
-    // font-style: italic;
+    color: $primaryBackgroundColor;
+}
+
+.see-more-a {
+    color: $secondaryBackgroundColor;
+}
+
+.see-more-a:visited {
+    color: $secondaryBackgroundColor;
 }
 
 .see-more-a:hover {
     color: $secondaryColor1;
 }
 
-.see-more-a:visited {
-    color: $primaryBackgroundColor;
-}
 
 .project-img {
     border: 1px solid $secondaryColor2;
@@ -340,16 +407,18 @@ h1, h2, h3, h4, h5 {
 
 @media(min-width:1500px){
 
+    .projects-h1-container {
+        padding: 1rem;
+    }
+
     #projects-h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 0;
+        padding: 1rem;
         margin: 0 1rem 0 0;
         font-size: 3.5rem;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
         color: $primaryBackgroundColor;
         background: $primaryColor1;
         letter-spacing: 1rem;
@@ -361,7 +430,7 @@ h1, h2, h3, h4, h5 {
         margin: 0;
         border: solid 2px $secondaryBackgroundColor;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     #all-projects-container {
@@ -425,7 +494,7 @@ h1, h2, h3, h4, h5 {
 
     .fa-github{
         font-size: 1.7rem;
-        color: $secondaryColor2;
+        color: $primaryBackgroundColor;
     }
 
 

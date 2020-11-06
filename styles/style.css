@@ -16,7 +16,7 @@
  * 02. projects & about
  * 03. Skills & education
  * 04. contact
- *
+ * 05. about & Skills
  *---nav and side contacts in other style sheets
 /*****************************
  *   00. common & reset css
@@ -209,7 +209,7 @@ header {
   }
 }
 
-#projects-h1 {
+.coding-skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,23 +217,12 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 0;
-  margin: 0 1rem 0 0;
-  font-size: 4.5rem;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-orientation: upright;
-  color: #d3d6db;
-  background: #171C28;
-  letter-spacing: 1rem;
-  height: 142rem;
 }
 
 .my-skills {
@@ -304,6 +293,74 @@ header {
         -ms-flex-direction: row;
             flex-direction: row;
     width: 12rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #about-and-skills-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: solid 2px black;
+    padding: 1rem;
+    width: 100%;
+  }
+  .about-p-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 80%;
+    background: #323d55;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px gray;
+            box-shadow: 5px 5px 5px gray;
+  }
+  .about-p {
+    background: #d3d6db;
+    color: #495867;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #495867;
+    border-radius: 5px;
+  }
+  #about-h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+    font-size: 3.5rem;
+    color: #d3d6db;
+    background: #171C28;
+    letter-spacing: 1rem;
   }
 }
 
@@ -566,8 +623,8 @@ a {
 }
 
 button {
-  -webkit-box-shadow: 0px 2px 8px  #1b1b1b;
-          box-shadow: 0px 2px 8px  #1b1b1b;
+  -webkit-box-shadow: 0px 2px 8px #1b1b1b;
+          box-shadow: 0px 2px 8px #1b1b1b;
 }
 
 a:hover, button:hover {
@@ -580,6 +637,7 @@ a:hover, button:hover {
 
 section {
   padding: 2rem 0;
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -593,7 +651,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 3px solid #171C28;
 }
 
 .section-heading {
@@ -636,9 +693,6 @@ section {
   .section-heading:after {
     display: none;
   }
-  .section-heading-container {
-    height: 40rem;
-  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -651,6 +705,20 @@ h1, h2, h3, h4, h5 {
  *****************************
  *
  */
+#slideshow-container {
+  background: none;
+}
+
+.my-pics-imgs {
+  position: relative;
+  width: 15rem;
+  border: 1px solid #495867;
+  -webkit-box-shadow: 0px 2px 8px #1b1b1b;
+          box-shadow: 0px 2px 8px #1b1b1b;
+  border-radius: 2rem;
+  margin: 1.5rem;
+}
+
 .landing-heading-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -749,6 +817,57 @@ h1, h2, h3, h4, h5 {
   padding: 2rem 1rem;
 }
 
+@media (min-width: 768px) {
+  .name-middle {
+    font-size: 3rem;
+    padding-right: 7.5rem;
+  }
+  .name-last {
+    font-size: 3rem;
+  }
+  .name-middle-e {
+    font-size: 3rem;
+    padding-right: 7.5rem;
+  }
+  .dev-title-background {
+    padding: .2rem;
+    border: solid 5px #495867;
+    background: #495867;
+    color: #d3d6db;
+  }
+  .dev-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.8rem;
+    padding: 1rem;
+    letter-spacing: normal;
+    font-family: "Cousine", monospace;
+    border: 2px solid #fca311;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 35rem;
+  }
+  .c-border {
+    padding: .8rem 1rem;
+    letter-spacing: normal;
+    border: 3px solid #fca311;
+    border-radius: 5px;
+  }
+  .b-border {
+    letter-spacing: normal;
+    border: 3px solid #fca311;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+  }
+  .landing-p {
+    padding: 2rem 1rem;
+  }
+}
+
 /*****************************
  *   02. projects & about
  *****************************
@@ -768,13 +887,8 @@ h1, h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
   margin: 0 1rem 0 0;
   font-size: 1.5rem;
-  -webkit-writing-mode: unset;
-      -ms-writing-mode: unset;
-          writing-mode: unset;
-  text-orientation: sideways;
   background: none;
   color: #171C28;
   letter-spacing: 1rem;
@@ -826,6 +940,7 @@ h1, h2, h3, h4, h5 {
           align-items: center;
   padding: .5rem;
   width: 100%;
+  color: #d3d6db;
 }
 
 .see-more-h3 {
@@ -837,14 +952,19 @@ h1, h2, h3, h4, h5 {
   color: #323d55;
   font-size: 1.5rem;
   padding: 1.2rem;
+  color: #d3d6db;
+}
+
+.see-more-a {
+  color: #323d55;
+}
+
+.see-more-a:visited {
+  color: #323d55;
 }
 
 .see-more-a:hover {
   color: #fca311;
-}
-
-.see-more-a:visited {
-  color: #d3d6db;
 }
 
 .project-img {
@@ -870,6 +990,9 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 1500px) {
+  .projects-h1-container {
+    padding: 1rem;
+  }
   #projects-h1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -884,13 +1007,9 @@ h1, h2, h3, h4, h5 {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 0;
+    padding: 1rem;
     margin: 0 1rem 0 0;
     font-size: 3.5rem;
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-    text-orientation: upright;
     color: #d3d6db;
     background: #171C28;
     letter-spacing: 1rem;
@@ -903,10 +1022,10 @@ h1, h2, h3, h4, h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #all-projects-container {
     display: -webkit-box;
@@ -995,7 +1114,7 @@ h1, h2, h3, h4, h5 {
   }
   .fa-github {
     font-size: 1.7rem;
-    color: #495867;
+    color: #d3d6db;
   }
   .see-more-container {
     color: #323d55;
