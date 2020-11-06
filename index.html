@@ -6,6 +6,7 @@
 <script src="https://kit.fontawesome.com/f0e8d23775.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./styles/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cousine&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 <head>
     <meta charset="UTF-8">
@@ -97,7 +98,7 @@
                 </div>
             </div>
             <!-- fix this slide show stuff -->
-            <figure id="landing-figure">
+            <figure id="landing-figure" data-aos="fade-up">
                 <div id="slideshow-container">
                     <div class="overlay"></div>
                     <figure class="my-pics">
@@ -119,12 +120,12 @@
 
 
         <section id="projects-section">
-            <div class="projects-h1-container">
+            <div class="projects-h1-container" data-aos="fade-up">
                 <h1 class="section-heading " id="projects-h1">Projects</h1>
             </div>
 
             <div id="all-projects-container">
-                <div class="figure-container">
+                <div class="figure-container" data-aos="fade-right">
                     <h2 class="projects-heading">Rock Paper Scissors RPG Game</h2>
                     <figure class="project-figure">
                         <img src="./pictures/projects/RockPaperScissors.PNG" alt="" class="project-img">
@@ -149,7 +150,7 @@
                     </figure>
                 </div>
 
-                <div class="figure-container">
+                <div class="figure-container" data-aos="fade-left">
                     <h2 class="projects-heading">Sprite Page Clone</h2>
                     <figure class="project-figure">
                         <img src="./pictures/projects/obeyYourThirst.PNG" alt="" class="project-img">
@@ -174,7 +175,7 @@
                     </figure>
                 </div>
 
-                <div class="figure-container">
+                <div class="figure-container" data-aos="fade-right">
                     <h2 class="projects-heading">Landing Page</h2>
                     <figure class="project-figure">
                         <img src="./pictures/projects/IronMindLandingPage.PNG" alt="" class="project-img">
@@ -198,7 +199,7 @@
                     </figure>
                 </div>
 
-                <div class="figure-container">
+                <div class="figure-container" data-aos="fade-left">
                     <h2 class="projects-heading">Mock Travel/Hotel Site</h2>
                     <figure class="project-figure">
                         <img src="./pictures/projects/MockHotelSite.PNG" alt="" class="project-img">
@@ -237,10 +238,10 @@
 
 
         <section id="about-and-skills-section">
-            <div class="about-h1-container">
+            <div class="about-h1-container" data-aos="fade-down">
                 <h1 class="section-heading" id="about-h1">About</h1>
             </div>
-            <div class="about-p-container">
+            <div class="about-p-container" data-aos="fade-up">
                 <p class="about-p">
 
                     Hi! My name is William Cole Boren, I go by my middle name Cole, and I am a Front-end Developer based
@@ -266,7 +267,7 @@
             </div>
             <div>
                 <div id="skills-and-education-container">
-                    <div class="skills-container">
+                    <div class="skills-container" data-aos="fade-right">
                         <h1 class="section-heading" id="skills-h1">Skills</h1>
                         <ul class="my-skills-ul">
                             <li class="my-skills-li">JavaScript</li>
@@ -281,7 +282,7 @@
                         </ul>
                     </div>
 
-                    <div class="education-container">
+                    <div class="education-container" data-aos="fade-down">
                         <h1 class="section-heading" id="education-h1">Education</h1>
                         <div class="bootcamp-container">
                             <h1 class="ed-h1">Tech 901</h1>
@@ -301,7 +302,7 @@
 
 
 
-        <section id="contact-section">
+        <section id="contact-section" data-aos="fade-up">
             <h1 class="contact-heading">Contact Me</h1>
             <div class="content-container">
                 <form action="https://airform.io/william.cole.boren@gmail.com" method="post" id="contact-form">
@@ -356,6 +357,10 @@
 
 
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
