@@ -73,7 +73,7 @@ header {
 .line {
   width: 15px;
   height: 3px;
-  background: #171C28;
+  background: #495867;
   margin: 3px;
 }
 
@@ -114,13 +114,14 @@ header {
 }
 
 .home-logo-a {
-  color: #171C28;
+  color: #495867;
   padding: .5rem;
   text-decoration: none;
 }
 
 .home-logo-a:hover {
   background: none;
+  color: #1b1b1b;
 }
 
 @media (min-width: 768px) {
@@ -138,9 +139,6 @@ header {
     display: -ms-flexbox;
     display: flex;
     color: #495867;
-  }
-  .home-logo-a:hover {
-    color: #171C28;
   }
   .nav-menu {
     position: absolute;
@@ -1129,9 +1127,9 @@ h1, h2, h3, h4, h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1321,7 +1319,7 @@ h1, h2, h3, h4, h5 {
     color: #495867;
     border: 2px solid #495867;
     background: #d3d6db;
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
     width: auto;
     height: auto;

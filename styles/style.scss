@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5 {
 .view-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: .5rem;
     width: 100%;
@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5 {
         color: $secondaryColor2;
         border: 2px solid $secondaryColor2;
         background: $primaryBackgroundColor;
-        padding: 1rem;
+        padding: 2rem;
         margin: 1rem;
         width: auto;
         height: auto;
