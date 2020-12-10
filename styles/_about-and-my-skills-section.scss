@@ -81,6 +81,9 @@
 
 ////Desktop View Sections
 @media (min-width:768px){
+    #about-and-skills-section {
+        padding: 4rem 0;
+    }
     .below {
         text-align: center;
         color: $primaryBackgroundColor;
@@ -89,6 +92,7 @@
     #skills-and-education-container {
         display: flex;
         flex-direction: row;
+        padding: 4rem 0;
     }
 
     .skills-container {
@@ -178,7 +182,6 @@
      flex-direction: column;
      justify-content: space-between;
      align-items: center;
-     padding: 1rem 0;
      width: 100%;
      }
 
