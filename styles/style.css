@@ -33,17 +33,20 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
   background: #d3d6db;
   height: 3rem;
-  width: 100%;
+  width: 100vw;
   z-index: 20;
+}
+
+.box-shadow-toggle {
   -webkit-box-shadow: 1px 1px 5px gray;
           box-shadow: 1px 1px 5px gray;
 }
@@ -57,17 +60,20 @@ header {
           justify-content: flex-end;
   width: 100%;
   z-index: 20;
+  border: none;
 }
 
 .hamburger {
   text-align: right;
   display: block;
-  margin: 1rem 2rem;
+  margin: 0rem 2rem;
   z-index: 20;
   background: none;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  width: 20px;
+  height: 22px;
 }
 
 .line {
@@ -81,13 +87,14 @@ header {
   position: absolute;
   background: #d3d6db;
   display: none;
-  margin-top: 12rem;
+  margin-top: 3.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
   -webkit-box-shadow: 0 4px 2px -1px gray;
           box-shadow: 0 4px 2px -1px gray;
+  z-index: 25;
 }
 
 #nav-links {
@@ -103,19 +110,20 @@ header {
 }
 
 .nav-li {
-  padding: .5rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
 }
 
 .nav-li-a {
   border-bottom: #495867 dashed 2px;
   font-weight: 800;
   font-size: 1.2rem;
-  color: #171C28;
+  color: #171c28;
 }
 
 .home-logo-a {
   color: #495867;
-  padding: .5rem;
+  margin: 1rem 2rem;
   text-decoration: none;
 }
 
@@ -181,10 +189,10 @@ header {
     color: #495867;
   }
   .nav-li-a:hover {
-    color: #171C28;
+    color: #171c28;
   }
   .hover::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     -webkit-transform: scaleX(0);
@@ -254,7 +262,7 @@ header {
   font-size: 1rem;
   letter-spacing: 5px;
   text-align: center;
-  background: #171C28;
+  background: #171c28;
   color: #d3d6db;
   border-radius: 5px;
   margin-top: 1rem;
@@ -357,7 +365,7 @@ header {
   }
   #skills-h1 {
     color: #d3d6db;
-    background: #171C28;
+    background: #171c28;
     -webkit-writing-mode: vertical-lr;
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
@@ -399,7 +407,7 @@ header {
   #education-h1 {
     margin: 1rem;
     color: #d3d6db;
-    background: #171C28;
+    background: #171c28;
     font-size: 2.5rem;
   }
   .bootcamp-container,
@@ -708,7 +716,7 @@ footer {
   .side-email a:hover, .side-fab:hover {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    color: #171C28;
+    color: #171c28;
   }
 }
 
@@ -717,14 +725,16 @@ footer {
   margin: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
 body {
   font-family: "Cousine", monospace;
-  color: #171C28;
+  color: #171c28;
   background: #d3d6db;
 }
 
@@ -758,12 +768,13 @@ button {
           box-shadow: 0px 2px 8px #1b1b1b;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   color: #fca311;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 section {
@@ -822,7 +833,11 @@ section {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   text-transform: uppercase;
   font-family: "Archivo Black", sans-serif;
 }
@@ -898,7 +913,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .dev-title-background {
-  padding: .2rem;
+  padding: 0.2rem;
   border: solid 2px #495867;
   border-radius: 5px;
   background: #323d55;
@@ -907,7 +922,7 @@ h1, h2, h3, h4, h5 {
 
 .dev-title {
   font-size: 1.2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   letter-spacing: normal;
   font-family: "Cousine", monospace;
   border: 2px solid #fca311;
@@ -916,7 +931,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .c-border {
-  padding: .4rem .6rem;
+  padding: 0.4rem 0.6rem;
   letter-spacing: normal;
   border: 2px solid #fca311;
   border-radius: 5px;
@@ -925,7 +940,7 @@ h1, h2, h3, h4, h5 {
 .b-border {
   letter-spacing: normal;
   border: 2px solid #fca311;
-  padding: .4rem .6rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 5px;
 }
 
@@ -982,7 +997,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 1rem;
   background: #d3d6db4f;
-  border: #171C28 2px solid;
+  border: #171c28 2px solid;
   z-index: 5;
 }
 
@@ -1026,7 +1041,7 @@ h1, h2, h3, h4, h5 {
     padding-right: 7.5rem;
   }
   .dev-title-background {
-    padding: .2rem;
+    padding: 0.2rem;
     border: solid 2px #495867;
     background: #323d55;
     color: #d3d6db;
@@ -1047,7 +1062,7 @@ h1, h2, h3, h4, h5 {
     width: 35rem;
   }
   .c-border {
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
     letter-spacing: normal;
     border: 3px solid #fca311;
     border-radius: 5px;
@@ -1055,7 +1070,7 @@ h1, h2, h3, h4, h5 {
   .b-border {
     letter-spacing: normal;
     border: 3px solid #fca311;
-    padding: .8rem 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 5px;
   }
   #landing-section {
@@ -1097,7 +1112,7 @@ h1, h2, h3, h4, h5 {
           align-items: center;
   font-size: 1.5rem;
   background: none;
-  color: #171C28;
+  color: #171c28;
   letter-spacing: 1rem;
   height: auto;
 }
@@ -1107,7 +1122,7 @@ h1, h2, h3, h4, h5 {
   margin: 2rem;
   padding: 1rem;
   border-radius: 5px;
-  background: #171C28;
+  background: #171c28;
   color: #d3d6db;
   letter-spacing: 5px;
   text-align: center;
@@ -1145,7 +1160,7 @@ h1, h2, h3, h4, h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 100%;
   color: #d3d6db;
 }
@@ -1184,7 +1199,7 @@ h1, h2, h3, h4, h5 {
   border: 1px solid #fca311;
   background-color: #495867;
   font-size: 1.3rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   margin: 1rem;
 }
 
@@ -1258,7 +1273,7 @@ h1, h2, h3, h4, h5 {
     margin: 0 1rem 0 0;
     font-size: 3.5rem;
     color: #d3d6db;
-    background: #171C28;
+    background: #171c28;
     letter-spacing: 1rem;
     height: 100%;
   }

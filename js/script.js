@@ -1,6 +1,6 @@
 ////Mobile Nav
 function toggleNav() {
-    let hamburger = document.querySelector('.hamburger');
+    // let hamburger = document.querySelector('.hamburger');
     let nav = document.querySelector('.nav-menu');
 
     if (nav.style.display === "none") {
@@ -9,8 +9,3 @@ function toggleNav() {
         nav.style.display = 'none';
     }
 }
-
-
-
-
-
