@@ -164,7 +164,9 @@ header {
     margin: 0;
   }
   #nav-ul {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
